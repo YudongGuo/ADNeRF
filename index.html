@@ -74,12 +74,12 @@
 
     <section>
         <div class="container">
-            <h3>Abstract</h3>
+            <h3><b>Introduction</b></h3>
             <div class="row">
                 <div class="col-12 text-center">
-                    <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                        <source src="video\pipeline.mp4" type="video/mp4">
-                    </video>
+                    <!-- <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                        <source src="image\pipeline.mp4" type="video/mp4">
+                    </video> -->
                     <p class="text-justify">
                         Generating high-fidelity talking head video by fitting with the input audio sequence is a
                         challenging problem that receives considerable attentions recently. In this paper, we
@@ -110,15 +110,100 @@
 
     <section>
         <div class="container">
-            <h3>
-                Video
-            </h3>
             <div class="row">
-                <div class="col-12 text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://www.youtube.com/embed/TQO2EBYXLyU" allowfullscreen
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
+                <div class="col-12 text-center" id="pipeline">
+                    <h3>Pipeline</h3>
+                    <!-- <hr style="margin-top:0px"> -->
+                    <iframe width="1100" height="372" src="video/pipeline.mp4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="text-justify">
+                        Our talking-head synthesis framework is trained
+                        on a short video sequence along with the audio track of a
+                        target person. Based on the neural rendering idea, we implicitly model the deformed human heads
+                        and upper bodies
+                        by neural scene representation, i.e., neural radiance fields.
+                        In order to bridge the domain gap between audio signals
+                        and visual faces, we extract the semantic audio features and
+                        learn a conditional implicit function to map the audio features to neural radiance fields.
+                        Finally, visual
+                        faces are rendered from the neural radiance fields using volumetric rendering.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" id="audio_driven">
+                    <h3>Audio Driven Results</h3>
+                    <!-- <hr style="margin-top:0px"> -->
+                    <iframe width="1100" height="496" src="video/audio_driven.mp4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="text-justify">
+                        Our method allows arbitrary audio input from different
+                        identity, gender and language to drive target persons.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" id="audio_driven">
+                    <h3>Background & Pose Editing</h3>
+                    <!-- <hr style="margin-top:0px"> -->
+                    <iframe width="1100" height="529" src="video/application.mp4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="text-justify">
+                        Our method can generate talking head frames with freely adjusted viewing directions and
+                        various background images.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" id="audio_driven">
+                    <h3>Individual NeRFs Representation</h3>
+                    <!-- <hr style="margin-top:0px"> -->
+                    <iframe width="1100" height="426" src="video/head_torso.mp4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="text-justify">
+                        We decompose the neural radiance fields of human
+                        portrait scenes into two branches to model the head and
+                        torso deformation respectively, which helps to generate more natural talking head results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" id="audio_driven">
+                    <h3>Comparisons</h3>
+                    <!-- <hr style="margin-top:0px"> -->
+                    <iframe width="1100" height="618" src="video/comparison.mp4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="text-justify">
+                        The image-based talking head methods are restricted by the input image size and thus could not
+                        producing high-resolution imagery as we do. The model-based methods generally require large
+                        quantities of training data. Moreover, our method owns the advantage of freely
+                        manipulating the viewing directions on the target person, which means that we can naturally rotate the “virtual camera” to observe the speaking actors from arbitrary novel angles.
+                    </p>
                 </div>
             </div>
         </div>
