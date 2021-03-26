@@ -1,1 +1,146 @@
-<h1>Hello!<h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AD-NeRF: Audio Driven Neural Radiance Fields for Talking Head Synthesis</title>
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./files/font-awesome.min.css">
+</head>
+
+<!-- cover -->
+
+<body>
+    <section>
+        <div class="jumbotron text-center mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>AD-NeRF: Audio Driven Neural Radiance Fields for Talking Head Synthesis
+                        </h2>
+                        <!-- <hr> -->
+                        <h6><a href="https://yudongguo.github.io/" target="_blank">Yudong Guo</a><sup>1,2</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://kychern.github.io/" target="_blank">Keyu Chen</a><sup>1,2</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://scholar.google.com/citations?user=Yv_olnAAAAAJ&hl" target="_blank">Sen
+                                Liang</a><sup>3</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm" target="_blank">Yongjin
+                                Liu</a><sup>4</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://www.cad.zju.edu.cn/bao/" target="_blank">Hujun Bao</a><sup>3</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://staff.ustc.edu.cn/~juyong/" target="_blank">Juyong Zhang</a><sup>1</sup>
+                            </p>
+                            <sup>1</sup>University of Science and Technology of China
+                            &nbsp;&nbsp;&nbsp;
+                            <sup>2</sup>Beijing Dilusense Technology Corporation
+                            <p>
+                                <sup>3</sup>Zhejiang University
+                                &nbsp;&nbsp;&nbsp;
+                                <sup>4</sup>Tsinghua University
+                            <ul class="nav nav-pills nav-justified">
+                                <li>
+                                    <a href="https://arxiv.org/abs/2103.11078">
+                                        <image src="image/paper_image.png" height="60px">
+                                            <h4><strong>Paper</strong></h4>
+                                    </a>
+                                </li>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=TQO2EBYXLyU">
+                                        <image src="image/youtube_icon.png" height="60px">
+                                            <h4><strong>Video</strong></h4>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            
+        </div>
+    </div> -->
+
+
+    <section>
+        <div class="container">
+            <h3>Abstract</h3>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <image src="image/pipeline.png" width="100%" class="img-responsive" alt="overview"><br>
+                        <p class="text-justify">
+                            Generating high-fidelity talking head video by fitting with the input audio sequence is a
+                            challenging problem that receives considerable attentions recently. In this paper, we
+                            address this
+                            problem with the aid of neural scene representation networks. Our method is completely
+                            different
+                            from existing methods that rely on intermediate representations like 2D landmarks or 3D face
+                            models
+                            to bridge the gap between audio input and video output. Specifically, the feature of input
+                            audio
+                            signal is directly fed into a conditional implicit function to generate a dynamic neural
+                            radiance
+                            field, from which a high-fidelity talking-head video corresponding to the audio signal is
+                            synthesized using volume rendering. Another advantage of our framework is that not only the
+                            head
+                            (with hair) region is synthesized as previous methods did, but also the upper body is
+                            generated via
+                            two individual neural radiance fields. Experimental results demonstrate that our novel
+                            framework can
+                            (1) produce high-fidelity and natural results, and (2) support free adjustment of audio
+                            signals,
+                            viewing directions, and background images.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3>
+                Video
+            </h3>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/TQO2EBYXLyU" allowfullscreen
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </p>
+    <!-- citing -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <h3>Citation</h3>
+                <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@misc{guo2021adnerf,
+    title={AD-NeRF: Audio Driven Neural Radiance Fields for Talking Head Synthesis},
+    author={Yudong Guo and Keyu Chen and Sen Liang and Yongjin Liu and Hujun Bao and Juyong Zhang},
+    year={2021},
+    eprint={2103.11078},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}</code></pre>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
